@@ -1,0 +1,74 @@
+:root {
+  --source-code-pro: 'Source Code Pro', monospace;
+  --first-color: #A50044;
+  --toggle-color: #004D98;
+  --second-color: #004D98;
+  --back-color: white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: var(--source-code-pro);
+  font-size: 0.939rem;
+  color: var(--second-color);
+  background-color: var(--back-color);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- */
+.section-title {
+  position: relative;
+  font-size: 1.25rem;
+  color: var(--first-color);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
